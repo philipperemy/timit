@@ -1,12 +1,8 @@
 # The DARPA TIMIT Acoustic-Phonetic Continuous Speech Corpus
 
-## Download link (Free)
-
-## http://academictorrents.com/details/34e2b78745138186976cbc27939b1b34d18bd5b3
-
-
-- Type: Dataset
-- Abstract: The DARPA TIMIT Acoustic-Phonetic Continuous Speech Corpus (TIMIT) Training and Test Data
+- **Download Link**: **http://academictorrents.com/details/34e2b78745138186976cbc27939b1b34d18bd5b3**
+- **Type**: Dataset
+- **Abstract**: The DARPA TIMIT Acoustic-Phonetic Continuous Speech Corpus (TIMIT) Training and Test Data
 
 The TIMIT corpus of read speech has been designed to provide speech data for the acquisition of acoustic-phonetic knowledge and for the development and evaluation of automatic speech recognition systems. TIMIT has resulted from the joint efforts of several sites under sponsorship from the Defense Advanced Research Projects Agency - Information Science and Technology Office (DARPA-ISTO). Text corpus design was a joint effort among the Massachusetts Institute of Technology (MIT), Stanford Research Institute (SRI), and Texas Instruments (TI). The speech was recorded at TI, transcribed at MIT, and has been maintained, verified, and prepared for CD-ROM production by the National Institute of Standards and Technology (NIST). This file contains a brief description of the TIMIT Speech Corpus. Additional information including the referenced material and some relevant reprints of articles may be found in the printed documentation which is also available from NTIS (NTIS# PB91-100354).
 
