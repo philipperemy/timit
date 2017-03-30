@@ -4,16 +4,17 @@
 
 ## http://academictorrents.com/details/34e2b78745138186976cbc27939b1b34d18bd5b3
 
-Type: Dataset
-Tags:
-Abstract: 
+- *Type*: Dataset
+- *Abstract*: 
+
 The DARPA TIMIT Acoustic-Phonetic Continuous Speech Corpus (TIMIT) Training and Test Data
 
 The TIMIT corpus of read speech has been designed to provide speech data for the acquisition of acoustic-phonetic knowledge and for the development and evaluation of automatic speech recognition systems. TIMIT has resulted from the joint efforts of several sites under sponsorship from the Defense Advanced Research Projects Agency - Information Science and Technology Office (DARPA-ISTO). Text corpus design was a joint effort among the Massachusetts Institute of Technology (MIT), Stanford Research Institute (SRI), and Texas Instruments (TI). The speech was recorded at TI, transcribed at MIT, and has been maintained, verified, and prepared for CD-ROM production by the National Institute of Standards and Technology (NIST). This file contains a brief description of the TIMIT Speech Corpus. Additional information including the referenced material and some relevant reprints of articles may be found in the printed documentation which is also available from NTIS (NTIS# PB91-100354).
 
-Corpus Speaker Distribution
+# Corpus Speaker Distribution
 TIMIT contains a total of 6300 sentences, 10 sentences spoken by each of 630 speakers from 8 major dialect regions of the United States. Table 1 shows the number of speakers for the 8 dialect regions, broken down by sex. The percentages are given in parentheses. A speaker's dialect region is the geographical area of the U.S. where they lived during their childhood years. The geographical areas correspond with recognized dialect regions in U.S. (Language Files, Ohio State University Linguistics Dept., 1982), with the exception of the Western region (dr7) in which dialect boundaries are not known with any confidence and dialect region 8 where the speakers moved around a lot during their childhood.
 
+```
    Table 1:  Dialect distribution of speakers
 
       Dialect
@@ -39,9 +40,12 @@ The dialect regions are:
      dr6:  New York City
      dr7:  Western
      dr8:  Army Brat (moved around)
-Corpus Text Material
+```
+
+# Corpus Text Material
 The text material in the TIMIT prompts (found in the file "prompts.doc") consists of 2 dialect "shibboleth" sentences designed at SRI, 450 phonetically-compact sentences designed at MIT, and 1890 phonetically-diverse sentences selected at TI. The dialect sentences (the SA sentences) were meant to expose the dialectal variants of the speakers and were read by all 630 speakers. The phonetically-compact sentences were designed to provide a good coverage of pairs of phones, with extra occurrences of phonetic contexts thought to be either difficult or of particular interest. Each speaker read 5 of these sentences (the SX sentences) and each text was spoken by 7 different speakers. The phonetically-diverse sentences (the SI sentences) were selected from existing text sources - the Brown Corpus (Kuchera and Francis, 1967) and the Playwrights Dialog (Hultzen, et al., 1964) - so as to add diversity in sentence types and phonetic contexts. The selection criteria maximized the variety of allophonic contexts found in the texts. Each speaker read 3 of these sentences, with each sentence being read only by a single speaker. Table 2 summarizes the speech material in TIMIT.
 
+```
 Table 2:  TIMIT speech material
   Sentence Type   #Sentences   #Speakers   Total   #Sentences/Speaker
   -------------   ----------   ---------   -----   ------------------
@@ -50,13 +54,15 @@ Table 2:  TIMIT speech material
   Diverse (SI)       1890           1       1890           3
   -------------   ----------   ---------   -----    ----------------
   Total              2342                   6300          10
+```
 Suggested Training/Test Subdivision
 
 The speech material has been subdivided into portions for training and testing. The criteria for the subdivision is described in the file "testset.doc". THIS SUBDIVISION HAS NO RELATION TO THE DATA DISTRIBUTED ON THE PROTOTYPE VERSION OF THE CDROM.
 
-Core Test Set:
+# Core Test Set:
 The test data has a core portion containing 24 speakers, 2 male and 1 female from each dialect region. The core test speakers are shown in Table 3. Each speaker read a different set of SX sentences. Thus the core test material contains 192 sentences, 5 SX and 3 SI for each speaker, each having a distinct text prompt.
 
+```
     Table 3:  The core test set of 24 speakers
 
      Dialect        Male      Female
@@ -69,9 +75,11 @@ The test data has a core portion containing 24 speakers, 2 male and 1 female fro
         6        CMJ0, JDH0    MGD0    
         7        GRT0, NJM0    DHC0
         8        JLN0, PAM0    MLD0
-Complete Test Set:
-A more extensive test set was obtained by including the sentences from all speakers that read any of the SX texts included in the core test set. In doing so, no sentence text appears in both the training and test sets. This complete test set contains a total of 168 speakers and 1344 utterances, accounting for about 27% of the total speech material. The resulting dialect distribution of the 168 speaker test set is given in Table 4. The complete test material contains 624 distinct texts.
+```
 
+# Complete Test Set:
+A more extensive test set was obtained by including the sentences from all speakers that read any of the SX texts included in the core test set. In doing so, no sentence text appears in both the training and test sets. This complete test set contains a total of 168 speakers and 1344 utterances, accounting for about 27% of the total speech material. The resulting dialect distribution of the 168 speaker test set is given in Table 4. The complete test material contains 624 distinct texts.
+```
      Table 4:  Dialect distribution for complete test set
 
       Dialect    #Male   #Female   Total
@@ -86,6 +94,7 @@ A more extensive test set was obtained by including the sentences from all speak
         8           8        3       11
       -----      -----   -------   ------
       Total       112       56      168
+```
 CDROM TIMIT Directory and File Structure
 
 The speech and associated data is organized on the CD-ROM according to the following hierarchy:
@@ -124,13 +133,13 @@ Examples: /timit/train/dr1/fcjf0/sa1.wav
 
 Online documentation and tables are located in the directory "timit/doc". A brief description of each file in this directory can be found in Section 6.
 
-File Types
+# File Types
 The TIMIT corpus includes several files associated with each utterance. In addition to a speech waveform file (.wav), three associated transcription files (.txt, .wrd, .phn) exist. These associated files have the form:
 
 <BEGIN_SAMPLE> <END_SAMPLE> <TEXT><new-line> . . . <BEGIN_SAMPLE> <END_SAMPLE> <TEXT><new-line>
 
 where,
-
+```
                 BEGIN_SAMPLE :== The beginning integer sample number for the 
                                  segment (Note: The first BEGIN_SAMPLE of each 
                                  file is always 0)
@@ -150,6 +159,8 @@ where,
                      PHONETIC_LABEL :== Single phonetic transcription code
                                         (See "phoncode.doc" for description 
                                         of codes)
+```
+```
  Table 5:  Utterance-associated file types       
  File Type                     Description
  ---------  ------------------------------------------------------
@@ -233,7 +244,8 @@ Phonetic label (.phn):
         54147 56654 ih
         56654 58840 axr
         58840 61680 h#
-Online Documentation
+```
+# Online Documentation
 Compact documentation is located in the "/timit/doc" directory. Files in this directory with a ".doc" extension contain freeform descriptive text and files with a ".txt" extension contain tables of formatted text which can be searched programmatically. Lines in the ".txt" files beginning with a semicolon are comments and should be ignored on searches. The following is a brief description of their contents:
 
     phoncode.doc - Table of phone symbols used in phonemic dictionary and 
