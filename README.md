@@ -1,6 +1,5 @@
 # The DARPA TIMIT Acoustic-Phonetic Continuous Speech Corpus
 
-- _**Status: Seems that AcademicTorrents removed the torrent from the website.**_
 - **Download Link (Free, provided by AcademicTorrents)**: **https://goo.gl/l0sPwz**
 - **Type**: Dataset
 - **Abstract**: The DARPA TIMIT Acoustic-Phonetic Continuous Speech Corpus (TIMIT) Training and Test Data
