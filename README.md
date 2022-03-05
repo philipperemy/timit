@@ -256,7 +256,3 @@ A more extensive description of corpus design, collection, and transcription can
 
 
 License: No license specified, the work may be protected by copyright.
-
-[![HitCount](http://hits.dwyl.io/philipperemy/timit.svg)](http://hits.dwyl.io/philipperemy/timit)
-
-*Counter since Feb 24 2019*
